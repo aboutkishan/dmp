@@ -753,7 +753,7 @@ body {
 
 .odd-s
 {
-  height: 350px;
+  min-height: 350px;
   background-color: #005993;
   color: #eaf7ff;
   border: 1px solid #909090;
@@ -786,7 +786,7 @@ body {
 
 .even-s
 {
-  height: 500px;
+  min-height: 500px;
   margin-top: 60px;
   border: 1px solid #a3a3a3;
 }
@@ -885,15 +885,10 @@ body {
   text-align: justify;
 }
 
-@media (min-width: @screen-md-min) 
+@media (max-width: 800px)
 {
-  .odd-s
-  {
-    min-height: 350px;
-  }
-  
-  .even-s
-  {
-    min-height: 500px;
-  }
+    .con-sec
+    {
+        width: 90%;
+    }
 }
